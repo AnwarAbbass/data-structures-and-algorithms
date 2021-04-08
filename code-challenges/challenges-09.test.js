@@ -20,8 +20,8 @@ Becomes:
 
 function transformToLis(obj){
   // Solution code here...
-  return Object.entries(obj).map(element => `<li>${element}</li>`);
-
+  let arr= Object.entries(obj).map(element => `<li>${element}</li>`);
+  return arr.map(ele => ele.replace(',',': '));
 }
 console.log(transformToLis({name: 'bob', age: 32})[0]);
 
@@ -157,12 +157,14 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (str) => {
   // Solution code here...
-  let arr=[str];
-  let revStr = arr.reduce((a,val,i)=>{
-   return a+=val[val.length-i];
-  },[])
+  let newArr = str.split('');
+  const revStr = newArr.reduce((acc, val, idx) => {
+    return acc += newArr[newArr.length - idx - 1];
+  }, '');
   return revStr;
 };
+console.log(reversedString('Code 301'))
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
