@@ -17,7 +17,7 @@ const maxInArray = (arr) => {
     return acc;
   }, 0)
 };
-console.log(maxInArray([4, 2, 7, 5, 9, 2]));
+console.log('1',maxInArray([4, 2, 7, 5, 9, 2]));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -46,7 +46,7 @@ const findMax = (matrix) => {
 
   return max;
 };
-console.log(findMax([
+console.log('2',findMax([
   [1, 3, 4, 5],
   [4, 5, 6],
   [23, 5, 5]
@@ -77,7 +77,7 @@ const totalSum = (matrix) => {
 
   return total;
 };
-console.log(totalSum([
+console.log('3',totalSum([
   [1, 3, 4, 5],
   [4, 5, 1],
   [3, 5, 5]
@@ -109,7 +109,7 @@ const grandTotal = (stores) => {
   // Solution code here...
   return hoursOpen.map((element, i) =>stores.reduce((acc, val) => acc += val[i], 0));
 };
-
+console.log(grandTotal(cookieStores))
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -122,7 +122,14 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   // Solution code here...
+  let totalSalesByHour =[];
+  data.forEach((element,indx)=>totalSalesByHour.push({
+    sales:element+' cookies',
+    time:hours[indx]
+  }));
+  return totalSalesByHour;
 };
+console.log('5',salesData(hoursOpen, grandTotal(cookieStores)))
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
