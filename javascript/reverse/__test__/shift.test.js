@@ -1,5 +1,4 @@
 'use strict';
-//[1,2,3,4]  [4,3,2,1]
 const d = require('../shift-array.js');
 
 describe('Testing challenge 2', () => {
