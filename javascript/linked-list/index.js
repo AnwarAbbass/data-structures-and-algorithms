@@ -33,8 +33,9 @@ class LinkedList {
 
         try {
             let found = false;
-            if (this.head) {
-                node = this.head;
+            let node = this.head;
+
+            if (node) {
                 while (node.next) {
                     if (node.data === data) {
                         found = true;
@@ -54,8 +55,8 @@ class LinkedList {
         try {
 
             let temp = '';
-            node = this.head;
-            while (node.next) {
+            let node = this.head;
+            while (node) {
 
                 if (node.next) {
                     temp += `${node.data} --> `;
@@ -63,6 +64,7 @@ class LinkedList {
                 else {
                     temp += `${node.data} --> Null `;
                 }
+                node = node.next
             }
 
             return temp;

@@ -1,7 +1,7 @@
 'use strict';
 
 // Require our linked list implementation
-const LinkedLilst = require('../index');
+const LinkedList = require('../index');
 
 describe('Linked List', () => {
   it('works', () => {
@@ -10,7 +10,7 @@ describe('Linked List', () => {
 
   let list;
   it('create linked list', () => {
-    list = new LinkedLilst()
+    list = new LinkedList()
     expect(list.head).toBeNull();
   });
 
@@ -36,13 +36,18 @@ describe('Linked List', () => {
     let val = 'b';
     let val2='r'
 
-    expect(list.includes(val)).toBe(true);
-    expect(list.includes(val2)).toBe(false);
+    let include = list.includes(val)
+    console.log(include);
+
+    expect(include).toBe(true);
+    // let include = list.includes(val)
+    // console.log(include);
+    // expect(list.includes(val2)).toBe(false);
   });
 
   it('should return linked list ', () => {
 
-    expect(list.toString()).toEqual('a --> b --> Null ');
+    expect(list.toString()).toEqual('b --> a --> Null ');
   });
 
 });
