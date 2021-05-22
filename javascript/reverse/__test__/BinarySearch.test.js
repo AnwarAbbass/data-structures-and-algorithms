@@ -1,5 +1,5 @@
 'use strict';
-const d = require('../BinarySearch.js');
+const d = require('../binarySearch/BinarySearch');
 
 describe('Testing challenge 3', () => {
     test('It should return key index', () => {
