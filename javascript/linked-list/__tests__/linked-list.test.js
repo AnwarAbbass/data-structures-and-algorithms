@@ -72,7 +72,7 @@ describe('Linked List', () => {
 
   it('should return linked list ', () => {
 
-    expect(list.toString()).toEqual('b --> a --> Null ');
+    expect(list.toString()).toEqual("e --> b --> a --> d --> c --> Null ");
   });
 
   it('should add new node after val', () => {
@@ -83,12 +83,12 @@ describe('Linked List', () => {
     expect(list.head.next.next.data).toEqual(val);
   });
 
-  it('should add new node befor head', () => {
+  it('should add new node after tail', () => {
     let val = 'v';
 
     list.insertAfter('c',val);
 
-    expect(list.head.next.next.data).toEqual(val);
+    expect(list.head.next.next.next.next.next.next.data).toEqual(val);
   });
 
 });
