@@ -16,4 +16,4 @@ Like arrays, Linked List is a linear data structure. Unlike arrays, linked list 
 ![](../img/ll.png)
 
 ## Solution
-![test](https://github.com/AnwarAbbass/data-structures-and-algorithms/pull/17/checks?check_run_id=2653381890)
+[test](https://github.com/AnwarAbbass/data-structures-and-algorithms/pull/17/checks?check_run_id=2653381890)
