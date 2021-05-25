@@ -3,4 +3,4 @@ Write a function called `reverseArray` which takes an array as an argument. With
 
 <br>
 
-![wihtboord](./img/reverse-array.jpg)
+![wihtboord](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/master/img/reverse-array.jpg?raw=true)
