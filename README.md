@@ -12,4 +12,11 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
 ### 401 Data Structures, Code Challenges
 
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+| class | link|
+|-------|-----|
+|class1 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/master/javascript/reverse/README.md)|
+|class2 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/master/javascript/shift-array/README.md)|
+|class3 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/master/javascript/binary-search/README.md)|
+|class4 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/master/javascript/linked-list/README.md)|
+|class5 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/ll-insertions/javascript/linked-list/README.md)|
+|class6 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/ll-kth-from-end/javascript/linked-list/README.md)|
