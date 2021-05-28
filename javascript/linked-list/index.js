@@ -24,13 +24,10 @@ class LinkedList {
       }
     } catch (error) {
       console.log('error' + error);
-
     }
-
   }
 
   includes(data) {
-
     try {
       let found = false;
       let node = this.head;
@@ -53,7 +50,6 @@ class LinkedList {
 
   toString() {
     try {
-
       let temp = '';
       let node = this.head;
       while (node) {
@@ -66,15 +62,12 @@ class LinkedList {
         }
         node = node.next;
       }
-
       return temp;
-
     } catch (error) {
       console.log('error' + error);
 
     }
   }
-
 }
 
 module.exports = LinkedList;
