@@ -16,4 +16,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 |-------|-----|
 |class1 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/master/javascript/reverse/README.md)|
 |class2 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/master/javascript/shift-array/README.md)|
-
+|class3 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/master/javascript/binary-search/README.md)|
+|class4 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/master/javascript/linked-list/README.md)|
