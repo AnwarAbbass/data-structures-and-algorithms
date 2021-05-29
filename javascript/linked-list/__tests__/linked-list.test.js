@@ -1,7 +1,7 @@
 'use strict';
 
 // Require our linked list implementation
-const LinkedLilst = require('../index');
+const LinkedList = require('../index');
 
 describe('Linked List', () => {
 
@@ -9,73 +9,44 @@ describe('Linked List', () => {
     expect(true).toBeTruthy();
   });
 
-  it('Where the linked list is of a size 1', () => {
-    let list=new LinkedLilst();
-    let val1='a';
 
-    list.insert(val1);
-
-    expect(list.kthFromEnd(0)).toEqual('a');
-    expect(list.kthFromEnd(1)).toEqual('Exception');
+  let list;
+  it('create linked list', () => {
+    list = new LinkedList();
+    expect(list.head).toBeNull();
   });
 
+  it('should add new head to empty list', () => {
+    let val = 'a';
 
+    list.insert(val);
 
-  it('Where k is not a positive integer', () => {
-    let list=new LinkedLilst();
-
-    let val2='b';
-    let val3 ='c';
-    let val1='a';
-
-    list.insert(val1);
-    list.insert(val2);
-    list.insert(val3);
-
-    expect(list.kthFromEnd(-1)).toEqual('Exception');
+    expect(list.head.data).toEqual(val);
+    expect(list.head.next).toBeNull();
   });
 
-  it('Where k and the length of the list are the same', () => {
-    let list=new LinkedLilst();
+  it('should add new head to unempty list', () => {
+    let val = 'b';
 
-    let val2='b';
-    let val3 ='c';
-    let val1='a';
+    list.insert(val);
 
-    list.insert(val1);
-    list.insert(val2);
-    list.insert(val3);
-
-    expect(list.kthFromEnd(2)).toEqual('c');
+    expect(list.head.data).toEqual(val);
+    expect(list.head.next.next).toBeNull();
   });
 
-  it('Where k is greater than the length of the linked list', () => {
+  it('should check if the value is exist', () => {
+    let val = 'b';
 
-    let list=new LinkedLilst();
+    let include = list.includes(val);
+    console.log(include);
 
-    let val2='b';
-    let val3 ='c';
-    let val1='a';
+    expect(include).toBe(true);
 
-    list.insert(val1);
-    list.insert(val2);
-    list.insert(val3);
-
-    expect(list.kthFromEnd(7)).toEqual('Exception');
   });
 
-  it('Where k and the length of the list are the same', () => {
-    let list=new LinkedLilst();
+  it('should return linked list ', () => {
 
-    let val2='b';
-    let val3 ='c';
-    let val1='a';
-
-    list.insert(val1);
-    list.insert(val2);
-    list.insert(val3);
-
-    expect(list.kthFromEnd(1)).toEqual('b');
+    expect(list.toString()).toEqual('b --> a --> Null ');
   });
 
 });
