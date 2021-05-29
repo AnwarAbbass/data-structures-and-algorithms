@@ -12,4 +12,4 @@ Write a function called `zipLists` which takes two linked lists as arguments. Zi
 ![](../img/Untitled.png)
 
 ## Solution
-[test]()
+[test](https://github.com/AnwarAbbass/data-structures-and-algorithms/runs/2699725350?check_suite_focus=true)
