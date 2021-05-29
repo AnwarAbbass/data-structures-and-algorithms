@@ -4,9 +4,11 @@
 const LinkedList = require('../index');
 
 describe('Linked List', () => {
+
   it('works', () => {
     expect(true).toBeTruthy();
   });
+
 
   let list;
   it('create linked list', () => {

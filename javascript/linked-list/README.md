@@ -17,4 +17,3 @@ Define a method called `toString` which takes in no arguments and returns a stri
 ![](../img/linked-list.png)
 
 [to see it more clearly](https://miro.com/app/board/o9J_lC4ptN0=/)
-
