@@ -90,6 +90,7 @@ class LinkedList {
   }
 
   insertBefore(value, newVal){
+
     if (!this.head) {
       this.head = new Node(newVal);
     }
@@ -102,6 +103,7 @@ class LinkedList {
       }
       while (temp.next) {
         if(temp.next.data === value){
+
           node.next =temp.next;
           temp.next = node;
           break;
@@ -130,6 +132,7 @@ class LinkedList {
         temp.next = node;
       }
     }
+
   }
 }
 

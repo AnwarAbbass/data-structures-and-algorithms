@@ -4,13 +4,15 @@
 const LinkedList = require('../index');
 
 describe('Linked List', () => {
+
   it('works', () => {
     expect(true).toBeTruthy();
   });
 
+
   let list;
   it('create linked list', () => {
-    list = new LinkedList()
+    list = new LinkedList();
     expect(list.head).toBeNull();
   });
 
@@ -59,15 +61,12 @@ describe('Linked List', () => {
 
   it('should check if the value is exist', () => {
     let val = 'b';
-    let val2='r'
 
-    let include = list.includes(val)
+    let include = list.includes(val);
     console.log(include);
 
     expect(include).toBe(true);
-    // let include = list.includes(val)
-    // console.log(include);
-    // expect(list.includes(val2)).toBe(false);
+
   });
 
   it('should return linked list ', () => {

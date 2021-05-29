@@ -1,12 +1,6 @@
 'use strict';
 //[1,2,3,4]  [4,3,2,1]
-function reverseArray(arr){
-  let newArr=[];
-  for (let index = arr.length-1; index >= 0;index--) {
-    newArr.push(arr[index]);
-  }
-  return newArr;
-}
+const reverseArray = require('../reverse');
 
 describe('Testing challenge 2', () => {
   test('It should return reverse array', () => {
