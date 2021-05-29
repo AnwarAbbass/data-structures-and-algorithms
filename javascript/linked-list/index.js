@@ -24,10 +24,13 @@ class LinkedList {
       }
     } catch (error) {
       console.log('error' + error);
+
     }
+
   }
 
   includes(data) {
+
     try {
       let found = false;
       let node = this.head;
@@ -50,6 +53,7 @@ class LinkedList {
 
   toString() {
     try {
+
       let temp = '';
       let node = this.head;
       while (node) {
@@ -86,6 +90,7 @@ class LinkedList {
   }
 
   insertBefore(value, newVal){
+
     if (!this.head) {
       this.head = new Node(newVal);
     }
@@ -98,6 +103,7 @@ class LinkedList {
       }
       while (temp.next) {
         if(temp.next.data === value){
+
           node.next =temp.next;
           temp.next = node;
           break;
@@ -126,20 +132,6 @@ class LinkedList {
         temp.next = node;
       }
     }
-  }
-
-  kthFromEnd(k){
-    if (!this.head) return 'empty list';
-    let arr=[];
-    let temp = this.head;
-
-    while (temp.next) {
-      arr.push(temp.data);
-      temp = temp.next;
-    }
-    if(k>arr.length || k<0) return 'Exception';
-    arr.push(temp.data);
-    return arr[arr.length-1-k];
 
   }
 }
