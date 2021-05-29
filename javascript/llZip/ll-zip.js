@@ -1,19 +1,18 @@
-const LL= require('../linked-list/index');
-
+'use strict';
 module.exports=(list1, list2)=>{
   let temp1=list1.head;
   let temp2=list2.head;
-  let list3;
-  // initialize list3
-  list3 = new LL();
-  while(temp1 || temp2) {
-    list3.append(temp1.data);
-    list3.append(temp2.data);
-
-    temp1 = temp1 ? temp1.next : temp1;
+  while(temp2 || temp1) {
+    if(temp1){
+      if(temp2){
+        list1.insertAfter(temp1.data,temp2.data);}
+      else break;}
+    else{ list1.append(temp2.data);}
+    temp1 = temp1 ? temp1.next.next : temp1;
     temp2 = temp2 ? temp2.next : temp2;
+
   }
 
-  return list3;
+  return list1;
 };
 
