@@ -19,6 +19,6 @@
 - Define a method called isEmpty that takes no argument, and returns a boolean indicating whether or not the queue is empty.
 - Be sure to follow your languages best practices for naming conventions.
 ## whiteboard
-[](https://drive.google.com/file/d/1fkX_JfTLSHPJBYDah9YkE-UnqELvb0s4/view?usp=sharing)
+![](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/master/img/queueandstack.png)
 ## solution
-[]()
+[test](https://github.com/AnwarAbbass/data-structures-and-algorithms/runs/2701853204?check_suite_focus=true)
