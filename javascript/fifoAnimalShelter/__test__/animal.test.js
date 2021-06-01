@@ -19,9 +19,10 @@ describe('Queue test', () => {
   });
 
   it('dequeue', () => {
+    console.log(queue);
     expect(queue.dequeue('dog').type).toBe('dog');
     expect(queue.dequeue('cat').type).toBe('cat');
-    expect(queue.dequeue('cat').type).toBe('exception ');
+    expect(queue.dequeue('cat')).toBe('exception ');
   });
 
   it('delete empty queue or ', () => {
