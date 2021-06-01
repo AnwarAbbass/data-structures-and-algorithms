@@ -19,7 +19,6 @@ describe('Queue test', () => {
   });
 
   it('dequeue', () => {
-    console.log(queue);
     expect(queue.dequeue('dog').type).toBe('dog');
     expect(queue.dequeue('cat').type).toBe('cat');
     expect(queue.dequeue('cat')).toBe('exception ');
