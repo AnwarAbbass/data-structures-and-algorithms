@@ -9,16 +9,17 @@ describe('multi bracket test', () => {
     expect(multiBracketValidation(brackets)).toBeTruthy();
   });
 
-  //   it('add to the stack', () => {
-  //     stack.push(5);
-  //     stack.push(8);
-  //     expect(stack.peek()).toEqual(8);
-  //     expect(stack.isEmpty()).toEqual(false);
-  //   });
+  it('send multy brackets ', () => {
+    expect(multiBracketValidation('{}(){}')).toBeTruthy();
+    expect(multiBracketValidation('()[[Extra Characters]]')).toBeTruthy();
+    expect(multiBracketValidation('(){}[[]]')).toBeTruthy();
+    expect(multiBracketValidation('{}{Code}[Fellows](())')).toBeTruthy();
+  });
 
-  //   it('create stack', () => {
-  //     expect(stack.pop()).toBe(8);
-  //   });
+  it('send multy wrong brackets ', () => {
+    expect(multiBracketValidation('[({}]')).toBe(false);
+    expect(multiBracketValidation('(](')).toBe(false);
+  });
 
 });
 

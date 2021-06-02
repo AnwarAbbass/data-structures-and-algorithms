@@ -1,22 +1,21 @@
 'use strict';
 
-function multiBracketValidation(input){
-  const opening=['(','[','{'];
-  const closing=[')',']','}'];
-  let check_list = [];
-  for (let i in input){
-    console.log('in for');
-    if (i in opening) check_list.push(i);
-    else if (i in closing){
-      console.log('closing');
-      let pos = closing.index(i);
-      if ((check_list.length > 0)&&(opening[pos] === check_list[check_list.length -1])) check_list.shift();
-      else return false;
-    }
+function multiBracketValidation(input) {
+
+  let parenCount=0, bracketCount=0, curleCount = 0;
+  for (let i = 0; i < input.length; i++) {
+    let checkChar = input[i];
+    if (checkChar == '(') parenCount++;
+    if (checkChar == ')') parenCount--;
+    if (checkChar == '[') bracketCount++;
+    if (checkChar == ']') bracketCount--;
+    if (checkChar == '<') curleCount++;
+    if (checkChar == '>') curleCount--;
+    if (parenCount < 0 || bracketCount < 0 || curleCount < 0) {return false;}
+
   }
-  console.log('out of for',check_list);
-  if (check_list.length === 0) return true;
-  else return false;
+  return ((parenCount + bracketCount + curleCount) === 0 ? true : false);
+
 }
 
 module.exports=multiBracketValidation;
