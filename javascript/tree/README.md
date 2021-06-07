@@ -23,6 +23,6 @@ its pdf please downlad it to see it clearly
 ![](../img/find-max.png)
 
 ## solution
-[test]()
+[test](https://github.com/AnwarAbbass/data-structures-and-algorithms/runs/2753832567?check_suite_focus=true)
 
-[test-max]()
+[test-max](https://github.com/AnwarAbbass/data-structures-and-algorithms/runs/2763588571?check_suite_focus=true)
