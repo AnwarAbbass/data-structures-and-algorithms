@@ -45,6 +45,21 @@ class BinaryTree {
     values(this.root);
     return tree;
   }
+
+  findMaximumValue(){
+    let max;
+    if (this.root) max = this.root.value;
+    else return 'No tree found';
+    let inner=(node)=>{
+      if (max < node.value) max = node.value;
+      if (node.left) inner(node.left);
+
+      if (node.right) inner(node.right);
+
+    };
+    inner(this.root);
+    return max;
+  }
 }
 
 class BinarySearchTree{
