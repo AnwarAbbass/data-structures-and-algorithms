@@ -60,6 +60,23 @@ class BinaryTree {
     inner(this.root);
     return max;
   }
+
+  breadthFirst(){
+    const breadthArray = [];
+    const roots = [];
+    if (!this.root) return 'Error The Tree is empty';
+    else {
+      roots.push(this.root);
+      while (roots.length) {
+        const node = roots.shift();
+        if (node.left) roots.push(node.left);
+        if (node.right) roots.push(node.right);
+        breadthArray.push(node.value);
+      }
+    }
+    console.log(breadthArray);
+    return breadthArray;
+  }
 }
 
 class BinarySearchTree{
