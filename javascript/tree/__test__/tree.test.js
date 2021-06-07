@@ -65,7 +65,7 @@ describe('Testing tree', () => {
   });
 
   it ('test binary search add', () => {
-    expect(tree.findMaximumValue).toBe(11);
+    expect(tree.findMaximumValue()).toBe(11);
 
   });
 
