@@ -64,8 +64,19 @@ describe('Testing tree', () => {
     expect(binary.contains(2)).toBeTruthy();
   });
 
-  it ('test binary search add', () => {
+  it ('test binary tree max value', () => {
     expect(tree.findMaximumValue()).toBe(11);
+
+  });
+
+  it ('test binary tree breadth first', () => {
+    const node1 = new Node(-5);
+    const node2 = new Node(55);
+
+    tree.root.left.left=node1;
+    tree.root.right.right=node2;
+
+    expect(tree.breadthFirst()).toEqual([ 5, 1, 11, -5, 55 ]);
 
   });
 
