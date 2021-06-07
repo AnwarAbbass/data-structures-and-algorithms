@@ -20,5 +20,9 @@
 [tree](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/master/javascript/tree.pdf)
 its pdf please downlad it to see it clearly
 
+![](../img/find-max.png)
+
 ## solution
-[]()
+[test]()
+
+[test-max]()
