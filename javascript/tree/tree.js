@@ -74,7 +74,6 @@ class BinaryTree {
         breadthArray.push(node.value);
       }
     }
-    console.log(breadthArray);
     return breadthArray;
   }
 }
