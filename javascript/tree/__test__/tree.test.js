@@ -64,9 +64,14 @@ describe('Testing tree', () => {
     expect(binary.contains(2)).toBeTruthy();
   });
 
-  it ('test binary tree max value', () => {
-    expect(tree.findMaximumValue()).toBe(11);
+  it ('test binary max value for empty tree', () => {
+    let emptyTree=new BinaryTree();
+    expect(emptyTree.findMaximumValue()).toBe('No tree found');
+  });
 
+
+  it ('test binary max value ', () => {
+    expect(tree.findMaximumValue()).toBe(11);
   });
 
   it ('test binary tree breadth first', () => {
