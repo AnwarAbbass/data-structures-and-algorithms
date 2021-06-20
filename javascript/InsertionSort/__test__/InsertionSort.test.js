@@ -1,9 +1,9 @@
 const { expect } = require('@jest/globals');
 const insertionSort = require('../InsertionSort');
 
-describe('Linked List', () => {
+describe('Insertion method', () => {
 
-  it('zip function ', () => {
+  it(' should return sorted array', () => {
     let arr =[8,4,23,42,16,15];
     let result= insertionSort(arr);
 
