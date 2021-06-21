@@ -26,3 +26,5 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 |class12 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/fifo-animal-shelter/javascript/fifoAnimalShelter/README.md)|
 |class16 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/find-maximum-binary-tree/javascript/tree/README.md)|
 |class17 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/breadth-first/javascript/tree/README.md)|
+|class16 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/InsertionSort/javascript/InsertionSort/README.md)|
+|class16 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/merge/javascript/merge/README.md)|
