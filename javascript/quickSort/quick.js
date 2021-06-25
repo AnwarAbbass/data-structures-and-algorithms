@@ -4,7 +4,6 @@ function quickSort(arr, left, right) {
     quickSort(arr, left, position - 1);
     quickSort(arr, position + 1, right);
   }
-  console.log(arr);
   return arr;
 }
 
@@ -30,3 +29,4 @@ function swap(arr, i, low) {
   arr[i] = arr[low];
   arr[low] = temp;
 }
+module.exports = quickSort;
