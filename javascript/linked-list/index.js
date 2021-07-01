@@ -36,7 +36,7 @@ class LinkedList {
       let node = this.head;
 
       if (node) {
-        while (node.next) {
+        while (node) {
           if (node.data === data) {
             found = true;
             break;

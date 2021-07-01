@@ -72,6 +72,20 @@ class HashTaple{
     return null;
   }
 
+  get1(key) {
+    if (this.table[key]) {
+      let temp = this.table[key].head;
+      let arr =Object.keys(this.table);
+      let i=0;
+      while (i<arr.length) {
+        if (key === arr[i]) {
+          return Object.values(temp.value)[0];}
+        i+=1;
+      }
+    }
+
+    return null;
+  }
 
   contains(key) {
     let hashedkey = this.hash(key);
