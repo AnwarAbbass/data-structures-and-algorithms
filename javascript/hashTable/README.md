@@ -21,3 +21,6 @@ Arguments: key
 
 ## Solution
 [test]()
+
+## whiteboard
+![](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/master/img/ll-insertions%20-%20Frame%203.jpg?raw=true)

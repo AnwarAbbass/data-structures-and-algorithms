@@ -10,6 +10,7 @@ class LinkedList {
   constructor() {
     this.head = null;
   }
+
   add(value) {
     const node = new Node(value);
     if (!this.head) {
@@ -42,7 +43,6 @@ class HashTaple{
     this.table = new Array(size);
   }
 
-
   hash(key) {
     let hash = key.split('').reduce((result, n) => {
       return result + n.charCodeAt(0);
@@ -50,14 +50,13 @@ class HashTaple{
     return hash;
   }
 
-
-
   add(key, value) {
     let hash = this.hash(key);
     if (!this.table[hash]) {
       this.table[hash] = new LinkedList();
     }
-    let keyValuePair = { [key]: value }; this.table[hash].add(keyValuePair);
+    let keyValuePair = { [key]: value }; 
+    this.table[hash].add(keyValuePair);
   }
 
   get(key) {
@@ -72,20 +71,6 @@ class HashTaple{
     return null;
   }
 
-  get1(key) {
-    if (this.table[key]) {
-      let temp = this.table[key].head;
-      let arr =Object.keys(this.table);
-      let i=0;
-      while (i<arr.length) {
-        if (key === arr[i]) {
-          return Object.values(temp.value)[0];}
-        i+=1;
-      }
-    }
-
-    return null;
-  }
 
   contains(key) {
     let hashedkey = this.hash(key);
@@ -99,6 +84,7 @@ class HashTaple{
     }
     return false;
   }
+
 }
 
 module.exports=HashTaple;
