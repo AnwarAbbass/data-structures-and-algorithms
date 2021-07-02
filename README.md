@@ -31,3 +31,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 |class16 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/mergeSort/javascript/merge/README.md)|
 |class30 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/hashTable/javascript/hashTable/README.md)|
 |class31 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/hashmap/javascript/hashTable/README.md)|
+|class32 |[link](https://github.com/AnwarAbbass/data-structures-and-algorithms/blob/hashmap-tree-intersection/javascript/hashmap-tree-intersection/README.md)|

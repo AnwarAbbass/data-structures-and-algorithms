@@ -17,4 +17,5 @@ function splitstr(str) {
   return listStr;
 }
 
+
 module.exports=repeatedWord;

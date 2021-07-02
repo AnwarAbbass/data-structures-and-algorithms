@@ -71,6 +71,7 @@ class HashTaple{
     return null;
   }
 
+
   contains(key) {
     let hashedkey = this.hash(key);
     if (this.table[hashedkey]) {
