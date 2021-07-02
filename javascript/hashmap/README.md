@@ -4,5 +4,7 @@
 - Arguments: string
 - Return: string
 
+## whiteboard
+![](../img/whitebord.jpg)
 ## Solution
 [test]()
