@@ -9,15 +9,30 @@ describe('hashing Hash tables', () => {
     let left = new HashTaple(6);
     let right = new HashTaple(6);
 
-    left.add('Noura',24);
-    left.add('Noor',23);
-    left.add('Tala',25);
-    left.add('Manar', 26);
+    left.add('fond','enamored');
+    left.add('wrath','anger');
+    left.add('diligent','employed');
+    left.add('outfit', 'garb');
+    left.add('guide', 'usher');
 
-    right.add('bero',6);
-    right.add('Noor',8);
-    right.add('Noura',7);
-    right.add('Manar', 3);
-    expect(leftJoin(left,right)).toEqual({"size": 6, "table": [{"head": {"next": null, "value": {"0": [23, 8]}}}, {"head": {"next": null, "value": {"5": [24, 7]}}}, {"head": {"next": null, "value": {"4": [25, null]}}}, {"head": {"next": null, "value": {"3": [26, 3]}}}, undefined, undefined]});
+    right.add('fond','averse');
+    right.add('wrath','delight');
+    right.add('diligent','idle');
+    right.add('guide', 'follow');
+    right.add('flow', 'jam');
+    let x=leftJoin(left, right);
+    let y=x.map(item=>{
+      return item.head.value;
+    });
+    console.log('from test', x);
+    expect(y).toEqual([
+      { wrath: [ 'anger', 'delight' ] },
+      undefined,undefined,
+      { fond: [ 'enamored', 'averse' ] },
+      undefined,undefined,undefined,
+      { outfit: [ 'garb', null ] },
+      { diligent: [ 'employed', 'idle' ] },
+      undefined,
+    ]);
   });
 });
