@@ -12,7 +12,8 @@
 <br>
 
 ## Whiteboard
-![]()
+
+![](../img/whitebord-1.jpg)
 
 ## Solution
 [test]()
